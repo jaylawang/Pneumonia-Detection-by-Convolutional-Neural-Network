@@ -3,6 +3,32 @@ Pneumonia is one of the leading causes of morbidity and mortality worldwide, par
 ## Dataset
 The Chest X-Ray Images (Pneumonia) dataset can be downloaded from [Kaggle](https://www.kaggle.com/datasets/paultimothymooney/chest-xray-pneumonia). The dataset contains about 5,863 X-Ray images (JPEG) and 2 categories (Pneumonia/Normal). The dataset is organized into 3 folders (train, test, val) and contains subfolders for each image category (Pneumonia/Normal). 
 ## Data Preparation
+## Enhancing Model Robustness
+
+To ensure that our models perform robustly in real-world applications, we have expanded our dataset using various image manipulation techniques. These techniques not only augment the diversity of our training data but also simulate real-world variations that the model might encounter. Below is a summary of the techniques used:
+
+### Data Augmentation Techniques
+
+1. **Rotation**:
+   - Randomly rotating images to account for orientation changes. This helps the model to remain effective regardless of the image orientation.
+
+2. **Sharpen**:
+   - Applying a sharpen filter to enhance the edges and highlight important details such as lesions, which can be crucial for accurate diagnoses.
+
+3. **Random Resized Crop**:
+   - Cropping and resizing images to different scales and dimensions to train the model to recognize features from various perspectives and scales.
+
+4. **Horizontal Flip**:
+   - Mirroring images horizontally to simulate different viewing conditions and further enhance the model's ability to generalize across different image orientations.
+
+### Objective
+
+The objective of these augmentation techniques is to create a well-prepared dataset that bridges the gap between AI predictions and real-world conditions, ensuring that our model is not only accurate but also versatile in handling diverse and unpredictable data inputs.
+
+![Data Augmentation Example](https://github.com/user-attachments/assets/1786f24b-e861-4f45-8fa5-1f871c4757e2)
+
+*A well-prepared dataset ensures robust performance and bridges real-world and AI predictions.*
+
 
 ## Model Structure
 
@@ -19,23 +45,6 @@ Added custom classification layers:
 
 
 ### Results
-
-<p align="center">
-  <img src="![image](https://github.com/user-attachments/assets/33cbba9e-3d05-4675-848c-ba98b44e7f73)
-" alt="Descriptive Image Text">
-</p>
-![image](https://github.com/user-attachments/assets/6f80ba7a-1342-4c21-b0f0-155f5f2410e3)
-
-
-
-![image](https://github.com/user-attachments/assets/1786f24b-e861-4f45-8fa5-1f871c4757e2)
-
-![image](https://github.com/user-attachments/assets/d183f430-9478-480e-aa0f-82780cd18b93)
-
-![image](https://github.com/user-attachments/assets/8f881c22-deb3-4e80-a821-99be32c432f9)
-
-
-
 
 
 
