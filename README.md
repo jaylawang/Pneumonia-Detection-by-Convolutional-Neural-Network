@@ -24,6 +24,7 @@ Added custom classification layers:
   <img src="![image](https://github.com/user-attachments/assets/33cbba9e-3d05-4675-848c-ba98b44e7f73)
 " alt="Descriptive Image Text">
 </p>
+![image](https://github.com/user-attachments/assets/6f80ba7a-1342-4c21-b0f0-155f5f2410e3)
 
 
 
