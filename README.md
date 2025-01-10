@@ -21,7 +21,7 @@ Added custom classification layers:
 ### Results
 
 <p align="center">
-  <img src="![image](https://github.com/user-attachments/assets/60478583-b222-41a8-94a4-e313c3133233)" alt="Prediction results with Grad-cam">
+  <img src="https://github.com/user-attachments/assets/1786f24b-e861-4f45-8fa5-1f871c4757e2" alt="Descriptive Image Text">
 </p>
 
 
