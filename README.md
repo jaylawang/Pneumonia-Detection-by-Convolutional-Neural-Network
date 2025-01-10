@@ -57,7 +57,6 @@ Added custom classification layers:
 
 
 ### Results
-## Model Predictions and Performance Evaluation
 
 In our project, we focus on the accuracy and interpretability of our model predictions for medical image analysis. Below are visual representations of the model's predictions and its performance evaluation through an ROC curve.
 
