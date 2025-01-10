@@ -57,7 +57,54 @@ Added custom classification layers:
 
 
 ### Results
+## Model Predictions and Performance Evaluation
 
+In our project, we focus on the accuracy and interpretability of our model predictions for medical image analysis. Below are visual representations of the model's predictions and its performance evaluation through an ROC curve.
+
+![微信截图_20250110142500](https://github.com/user-attachments/assets/54d12c0f-4c9e-4110-ad33-40f4915edc25)
+
+
+### Prediction Heatmap
+
+The heatmap visualization on the left indicates areas of interest in a chest X-ray image where the model predicts normal conditions. The colors range from blue (low relevance) to red (high relevance), highlighting regions that influenced the model's prediction of 'Normal'.
+
+### ROC Curve
+The ROC (Receiver Operating Characteristic) curve on the right evaluates the diagnostic ability of our model at various threshold settings. The curve plots the true positive rate against the false positive rate, showcasing the trade-offs between sensitivity and specificity.
+
+- **AUC (Area Under Curve): 0.9632**
+  This high AUC value indicates that the model has excellent discrimination capabilities, significantly better than random guessing (represented by the dotted line).
+
+## Model Performance Evaluation
+
+To assess the performance of our models in classifying medical images, we use a confusion matrix and F1 score comparison among different models.
+
+### Confusion Matrix
+
+The confusion matrix below displays the number of correct and incorrect predictions made by our model. The matrix helps in understanding the model's ability to correctly identify each class:
+
+- **True Positives for Pneumonia**: 365
+- **True Negatives for Normal**: 202
+- **False Positives**: 32
+- **False Negatives**: 25
+
+This matrix indicates that our model is highly effective in identifying pneumonia, with a high number of true positives and relatively fewer errors.
+
+![下载 (1)](https://github.com/user-attachments/assets/f0366a96-e3cc-41ac-bea6-3ec49d46ed22)
+
+
+### F1 Score Comparison
+
+The F1 score is a measure of a test's accuracy and considers both the precision and the recall of the test to compute the score. The bar graph below compares the F1 scores of our model using VGG16 architecture with other popular models such as ResNet50 and InceptionV3.
+
+- **VGG16**: F1 score is relatively higher, indicating excellent balance between precision and recall.
+- **ResNet50 and InceptionV3**: Show competitive performance but slightly lower F1 scores compared to VGG16.
+
+This comparison highlights the strengths and weaknesses of each model architecture in handling medical image classification tasks.
+
+![下载](https://github.com/user-attachments/assets/bad5641b-be80-48e0-9438-d5a171913fe7)
+
+
+The analysis of both the confusion matrix and the F1 scores demonstrates the robustness and accuracy of our model in diagnosing pneumonia from chest X-rays. These tools are invaluable for refining the model and achieving better performance across varying medical scenarios.
 
 
 ## Contribution
