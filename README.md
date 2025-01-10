@@ -6,28 +6,19 @@ The Chest X-Ray Images (Pneumonia) dataset can be downloaded from [Kaggle](https
 ## Enhancing Model Robustness
 
 To ensure that our models perform robustly in real-world applications, we have expanded our dataset using various image manipulation techniques. These techniques not only augment the diversity of our training data but also simulate real-world variations that the model might encounter. Below is a summary of the techniques used:
-
 ### Data Augmentation Techniques
-
 1. **Rotation**:
    - Randomly rotating images to account for orientation changes. This helps the model to remain effective regardless of the image orientation.
-
 2. **Sharpen**:
    - Applying a sharpen filter to enhance the edges and highlight important details such as lesions, which can be crucial for accurate diagnoses.
-
 3. **Random Resized Crop**:
    - Cropping and resizing images to different scales and dimensions to train the model to recognize features from various perspectives and scales.
-
 4. **Horizontal Flip**:
    - Mirroring images horizontally to simulate different viewing conditions and further enhance the model's ability to generalize across different image orientations.
-
 ### Objective
-
 The objective of these augmentation techniques is to create a well-prepared dataset that bridges the gap between AI predictions and real-world conditions, ensuring that our model is not only accurate but also versatile in handling diverse and unpredictable data inputs.
+![图片1](https://github.com/user-attachments/assets/a81e018e-43a3-40a9-9904-86838a9853d0)
 
-![Data Augmentation Example](https://github.com/user-attachments/assets/1786f24b-e861-4f45-8fa5-1f871c4757e2)
-
-*A well-prepared dataset ensures robust performance and bridges real-world and AI predictions.*
 
 
 ## Model Structure
