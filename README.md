@@ -1,1 +1,1 @@
- Pneumonia Detection with Convolutional Neural Network
+ %Pneumonia Detection with Convolutional Neural Network
