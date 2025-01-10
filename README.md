@@ -3,10 +3,31 @@ Pneumonia is one of the leading causes of morbidity and mortality worldwide, par
 ## Dataset
 The Chest X-Ray Images (Pneumonia) dataset can be downloaded from [Kaggle](https://www.kaggle.com/datasets/paultimothymooney/chest-xray-pneumonia). The dataset contains about 5,863 X-Ray images (JPEG) and 2 categories (Pneumonia/Normal). The dataset is organized into 3 folders (train, test, val) and contains subfolders for each image category (Pneumonia/Normal). 
 ## Data Preparation
-## Enhancing Model Robustness
 
+## Addressing Data Imbalance in Training Datasets
+
+Our model's performance can be significantly affected by data imbalance, where the majority class overshadows the minority class, leading to biased predictions. To counteract this issue, we have implemented a strategy to balance the class weights during the training process.
+
+### Training Dataset Distribution
+
+- **Pneumonia**: 74% of the data
+- **Normal**: 26% of the data
+
+This distribution causes a bias toward the majority class, which is 'Pneumonia' in our dataset.
+
+### Strategy for Balancing Classes
+
+We utilize the `compute_class_weight` function to assign appropriate weights to each class, ensuring that the minority class has a higher impact during model training. This approach helps to mitigate the majority class bias and enhance the model's ability to generalize across different classes.
+
+### Computed Weights
+
+- **Normal Sample Weights**: 1.94
+- **Pneumonia Sample Weights**: 0.67
+
+## Enhancing Model Robustness
 To ensure that our models perform robustly in real-world applications, we have expanded our dataset using various image manipulation techniques. These techniques not only augment the diversity of our training data but also simulate real-world variations that the model might encounter. Below is a summary of the techniques used:
 ### Data Augmentation Techniques
+![图片1](https://github.com/user-attachments/assets/a81e018e-43a3-40a9-9904-86838a9853d0)
 1. **Rotation**:
    - Randomly rotating images to account for orientation changes. This helps the model to remain effective regardless of the image orientation.
 2. **Sharpen**:
@@ -17,7 +38,7 @@ To ensure that our models perform robustly in real-world applications, we have e
    - Mirroring images horizontally to simulate different viewing conditions and further enhance the model's ability to generalize across different image orientations.
 ### Objective
 The objective of these augmentation techniques is to create a well-prepared dataset that bridges the gap between AI predictions and real-world conditions, ensuring that our model is not only accurate but also versatile in handling diverse and unpredictable data inputs.
-![图片1](https://github.com/user-attachments/assets/a81e018e-43a3-40a9-9904-86838a9853d0)
+
 
 
 
