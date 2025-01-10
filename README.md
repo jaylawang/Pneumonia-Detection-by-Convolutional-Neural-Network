@@ -8,7 +8,7 @@ The Chest X-Ray Images (Pneumonia) dataset can be downloaded from [Kaggle](https
 
 ## Contribution
 |      Name   |     Matric Number    |     Contributions  | 
-|  :--------   |  :--------:  |  --------: |
+|  :--------   |  :--------:  |  :--------: |
 |  YANG HANQI  |   23080743  | R&D, Code Implementation |
 |  WANG HUI  |  24052316  | R&D, Report Writing |
 |  WANG JIAYANG  |  23105699  | R&D, Report Writing |
