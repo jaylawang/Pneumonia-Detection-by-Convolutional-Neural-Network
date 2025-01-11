@@ -60,12 +60,9 @@ Added custom classification layers:
 
 In our project, we focus on the accuracy and interpretability of our model predictions for medical image analysis. Below are visual representations of the model's predictions and its performance evaluation through an ROC curve.
 
-![微信截图_20250110142500](https://github.com/user-attachments/assets/54d12c0f-4c9e-4110-ad33-40f4915edc25)
+![image](https://github.com/user-attachments/assets/7eee3ba2-a9c1-4471-b79f-2ba2c72c0ccf)
 
 
-### Prediction Heatmap
-
-The heatmap visualization on the left indicates areas of interest in a chest X-ray image where the model predicts normal conditions. The colors range from blue (low relevance) to red (high relevance), highlighting regions that influenced the model's prediction of 'Normal'.
 
 ### ROC Curve
 The ROC (Receiver Operating Characteristic) curve on the right evaluates the diagnostic ability of our model at various threshold settings. The curve plots the true positive rate against the false positive rate, showcasing the trade-offs between sensitivity and specificity.
